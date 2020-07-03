@@ -1,2 +1,2 @@
 # Jamming
-  visit: [a link](http://jamm-music.surge.sh/)
+  visit: [Jamming-App](http://jamm-music.surge.sh/)
