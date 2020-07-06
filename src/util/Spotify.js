@@ -1,6 +1,6 @@
 
 const clientID = 'c31c7f011b4644a49b5ff29df3089489';
-const redirectURI = 'http://jam-music.surge.sh';
+const redirectURI = 'https://abdullahfawzy.github.io/Jamming/';
 
 let accessToken;
 
