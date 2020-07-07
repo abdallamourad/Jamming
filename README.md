@@ -1,2 +1,2 @@
 # Jamming
-  visit: [Jamming-App](http://jamm-music.surge.sh/)
+  visit: [Jamming-App](https://abdullahfawzy.github.io/Jamming/)
