@@ -1,5 +1,6 @@
-const clientID = 'c31c7f011b4644a49b5ff29df3089489';
-const redirectURI = 'https://abdullahfawzy.github.io/Jamming/';
+const clientID = '0cc84cce66484a93a68952fb88f03487';
+const redirectURI = 'http://localhost:3000/Jamming'
+// const redirectURI = 'https://abdullahfawzy.github.io/Jamming/';
 
 var accessToken;
 
