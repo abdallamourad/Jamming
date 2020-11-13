@@ -32,7 +32,7 @@ const App = () => {
   const savePlaylist = () => {
     const trackURIS = playlistTracks.map(track => track.uri);
     Spotify.savePlaylist(playlistName, trackURIS).then(() => {
-      setPlaylistName('New Playlist');
+      updatePlaylistName('New Playlist');
       setPlaylistTracks([]);
     });
   }
