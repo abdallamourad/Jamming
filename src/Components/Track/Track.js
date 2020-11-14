@@ -1,12 +1,12 @@
 import React from 'react';
-import './Track.css';
+import { StyledTrack, TrackAction, TrackInfromation } from './Track-style';
 
 const Track = ({ isRemoval, onAdd, onRemove, track }) => {
     const renderAction = () => {
         if (isRemoval) {
-            return <button className="Track-action" onClick={removeTrack}>-</button>;
+            return <TrackAction onClick={removeTrack}>-</TrackAction>;
         } else {
-            return <button className="Track-action" onClick={addTrack}>+</button>;
+            return <TrackAction onClick={addTrack}>+</TrackAction>;
         }
     }
 
@@ -19,13 +19,13 @@ const Track = ({ isRemoval, onAdd, onRemove, track }) => {
     }
 
     return (
-        <div className="Track">
-            <div className="Track-information">
+        <StyledTrack>
+            <TrackInfromation>
                 <h3>{track.name}</h3>
                 <p>{track.artist} | {track.album}</p>
-            </div>
+            </TrackInfromation>
             {renderAction()}
-        </div>
+        </StyledTrack>
     );
 }
 
