@@ -20,9 +20,9 @@ const App = () => {
   }
 
   const removeTrack = track => {
-    let playlistTracks = playlistTracks.filter(currTrack => currTrack.id !== track.id);
+    let tracks = playlistTracks.filter(currTrack => currTrack.id !== track.id);
 
-    setPlaylistTracks(playlistTracks);
+    setPlaylistTracks(tracks);
   }
 
   const updatePlaylistName = name => {

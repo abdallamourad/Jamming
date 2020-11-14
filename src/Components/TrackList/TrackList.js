@@ -1,10 +1,10 @@
 import React from 'react';
-import './TrackList.css';
+import { StyledTrackList } from './TrackList-style'
 import Track from '../Track/Track';
 
 const TrackList = ({ tracks, onAdd, onRemove, isRemoval }) => {
     return (
-        <div className="TrackList">
+        <StyledTrackList>
             {
                 tracks.map(track => 
                     <Track 
@@ -16,7 +16,7 @@ const TrackList = ({ tracks, onAdd, onRemove, isRemoval }) => {
                     />
                 )
             }
-        </div>
+        </StyledTrackList>
     );
 }
 

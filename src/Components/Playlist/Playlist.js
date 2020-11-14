@@ -1,5 +1,5 @@
 import React from 'react';
-import './Playlist.css';
+import { StyledPlaylist, PlaylistSaveBtn } from './Playlist-style';
 import TrackList from '../TrackList/TrackList';
 
 const Playlist = ({ onNameChange, playlistName, playlistTracks, onRemove, onSave }) => {
@@ -8,7 +8,7 @@ const Playlist = ({ onNameChange, playlistName, playlistTracks, onRemove, onSave
     }
 
     return (
-        <div className="Playlist">
+        <StyledPlaylist>
             <input 
                 value={playlistName}
                 onChange={handleNameChange}
@@ -18,8 +18,8 @@ const Playlist = ({ onNameChange, playlistName, playlistTracks, onRemove, onSave
                 onRemove={onRemove}
                 isRemoval={true}
             />
-            <button className="Playlist-save" onClick={onSave}>SAVE TO SPOTIFY</button>
-        </div>
+            <PlaylistSaveBtn onClick={onSave}>SAVE TO SPOTIFY</PlaylistSaveBtn>
+        </StyledPlaylist>
     );
 }
 

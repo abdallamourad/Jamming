@@ -1,17 +1,17 @@
 import React from 'react';
-import './SearchResults.css';
+import { StyledSearchResults } from './SearchResults-style';
 import TrackList from '../TrackList/TrackList';
 
 const SearchResults = ({ searchResults, onAdd }) => {
     return (
-        <div className="SearchResults">
+        <StyledSearchResults>
             <h2>Results</h2>
             <TrackList 
                 tracks={searchResults}
                 onAdd={onAdd}
                 isRemoval={false}
             />
-        </div>
+        </StyledSearchResults>
     );
 }
 
